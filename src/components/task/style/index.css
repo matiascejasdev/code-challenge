@@ -1,0 +1,68 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 364px;
+  min-height: 107px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  background: #ffffff;
+  margin-bottom: 40px;
+}
+
+.task-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+
+.back-button,
+.forward-button {
+  width: 52px;
+  height: 70px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.back-button img,
+.forward-button img {
+  width: 29px;
+  height: 25px;
+}
+
+.back-button {
+  background: #c20b0b;
+  margin-left: 15px;
+}
+
+.forward-button {
+  background: #218d1f;
+  margin-right: 15px;
+}
+
+.back-button:disabled {
+  background: #ff9e9e;
+  cursor: no-drop;
+}
+
+.forward-button:disabled {
+  background: rgba(33, 141, 31, 0.3);
+  cursor: no-drop;
+}
+
+@media screen and (max-width: 991px) {
+  .task-name {
+    font-size: 16px;
+  }
+}

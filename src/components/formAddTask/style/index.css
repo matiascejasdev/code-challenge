@@ -1,0 +1,70 @@
+.add-task-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 410px;
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+
+.add-task-input {
+  width: 100%;
+  max-width: 287px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  padding: 0 35px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  outline: none;
+}
+
+.add-task-input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #757575;
+}
+
+.add-task-button {
+  height: 60px;
+  width: 100%;
+  max-width: 91px;
+  background: #0066ff;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.add-task-button:disabled {
+  cursor: no-drop;
+}
+
+.error {
+  height: 18px;
+  color: red;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 991px) {
+  .add-task-form {
+    display: flex;
+    justify-content: center;
+  }
+  .add-task-input {
+    max-width: 240px;
+  }
+  .add-task-input {
+    padding: 0 30px;
+  }
+}
